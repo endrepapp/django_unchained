@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <title>Website</title>
+     {% load staticfiles %}
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <link rel="stylesheet" href="{% static 'sitee/css/transmog.css' %}" type = "text/css"/>
+</head>
+<!--background="{% static 'sitee/img/construction.jpg' %}" -->
+<body >
+  <div class="background">
+    <div class="layer">
+      <header>
+        <div>
+        <h1>mysite</h1>
+          <ul class=" ul-one">
+          <li>Home</li>
+          <li>ph:1323648723</li>
+          <button  onclick="changetext()">HOMELAND</button>
+          </ul>
+        </div>
+      </header>
+    
+      <img src="{% static 'sitee/img/construction.jpg' %}" id=firstimg >
+        <!---   css fileból beolvasva bodyn kívül irja magat, layer problem? -->
+        <ul class="ul-two">  
+          <li>Coffee</li>
+          <li>Coffee</li>
+          <li>Coffee</li>
+        </ul>
+        <div id="testjq">
+          <ul style=" position: absolute;
+                      top: 75%;
+                      width: 700px;
+                      left: 40%;
+                      font-size: 40px;">  
+            <p>randomshit</p>
+            <li>Coffee</li>
+            <li>Coffee</li>
+          </ul>
+        </div>   
+      <img src="{% static 'sitee/img/build.jpeg' %}" id=secimg >
+    </div>
+  </div>
+  <script > 
+  function changetext(){
+    $('#testjq li').text('Hi I am replace');
+    $('#testjq p').text('Hi I am replace of the p');
+  }
+
+ 
+  </script>
+          {% block content %}
+          {% endblock %} 
+</body>
+</html>
