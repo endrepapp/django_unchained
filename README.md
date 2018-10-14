@@ -1,1 +1,1 @@
-# django_unchained
+This is a Django test project
