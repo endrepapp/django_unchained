@@ -1,34 +1,58 @@
-
 body {	 
 	 margin: 0;
 	 padding: 0;
 	 z-index:3;
 }
+/*-----PART1 HEADER START-----*/
 header div{
 	 max-width: 1000px;
-	 margin: 0 auto;
-}
+	 margin: auto;
 
+}
 header {
-	 background: #6390bc;
+	 height: 100px;
+	 background: #df7209;
 	 width: 100%;
 	 top: 0;
 	 position: fixed;
 	 z-index:2;
 	 /*  z-index:2; olyan mint a layer, lehetőleg ezt replacelni kéne valami más methodal ami kitolja  */
 }
-header h1 {
-	 float: left;
-	 font-family: helvetica, arial, sans-serif;
-}
 header li {
 	 display: inline-block;
 	 margin-right: 1em;
 }
+header a {
+	color: black;
+	font-family: helvetica;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+/*-----BODY START-----*/
+section {
+  color: #fff;
+  text-align: center;
+}
+div {
+  height: 100%;
+}
+article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 20px;
+}
+/*----PART1 BODY END-----*/
+
+
+/*-----PART2 HEADER START-----*/
 ul.ul-one {
 	 float: right;
 	 list-style-type: none;
-	 padding-top: 1em;
+	 padding-top: 1.5em;
 }
 ul.ul-two {
 	position: absolute;
@@ -37,33 +61,62 @@ ul.ul-two {
 	left: 55%;
 	font-size: 40px;
 }
-#firstimg{
-	height: 300px;
-	width: 350px;
+#pagebone{
+	color: black;
+	font-family: helvetica;
+	text-decoration: none;
+	text-transform: uppercase;
 	position: absolute;
-	top: 15%;
-	left: 20%
-}	
-#secimg{
-	height: 300px;
-	width: 350px;
-	position: absolute;
-	top: 65%;
-	left: 60%
+	top: 25px;
+	left: 7%;
+	float: left;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 40px;
 }
-.background{
-	
-    background-repeat: no-repeat;
-    background-size: auto;
-    width: 100%;
-    height: 100%;
+#pagebtwo{
+	color: black;
+	font-family: helvetica;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: absolute;
+	top: 25px;
+	left: 22%;
+	float: left;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 40px;
+}
+.languageb{
+	position: absolute;
+	right: 5%;
+}
+/*-----PART2 HEADER END-----*/
 
-}
+/* header body közötti réteg*/
 .layer{
-    background-color: rgba(248, 247, 216, 0.7);
+    background-color: #df7209;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-
 }
+
+/*----PART2 BODY START-----*/
+.container {
+  display: table;
+  width: 100%;
+}
+
+.left-half {
+  background-color: #ff9e2c;
+  position: absolute;
+  left: 0px;
+  width: 25%;
+}
+
+.right-half {
+  background-color: #b6701e;
+  position: absolute;
+  right: 0px;
+  width: 75%;
+}
+/*----PART2 BODY END-----*/

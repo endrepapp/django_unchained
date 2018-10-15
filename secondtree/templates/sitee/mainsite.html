@@ -1,57 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-     <title>Website</title>
-     {% load staticfiles %}
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <link rel="stylesheet" href="{% static 'sitee/css/transmog.css' %}" type = "text/css"/>
+    <meta charset="UTF-8">
+    <title>Website</title>
+    {% load staticfiles %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'sitee/css/transmog.css' %}" type="text/css"/>
 </head>
 <!--background="{% static 'sitee/img/construction.jpg' %}" -->
-<body >
-  <div class="background">
+<body>
+<div class="background">
     <div class="layer">
-      <header>
-        <div>
-        <h1>mysite</h1>
+        <header>
+          <a href="{% url 'index' %}">
+              <img src="{% static 'sitee/img/logo.png' %}"
+                   style="position: absolute;  width:100px;height:100px;border:0;left:0px;">
+          </a>
+          <a id="pagebone" href="{% url 'index' %}">WELLCOME</a>
+          <a id="pagebtwo" href="{% url 'index' %}">SITE1</a>
           <ul class=" ul-one">
-          <li>Home</li>
-          <li>ph:1323648723</li>
-          <button  onclick="changetext()">HOMELAND</button>
+            <div class="languageb">
+              <a href="{% url 'index' %}">HU</a>
+              <a href="{% url 'index' %}">EN</a>
+              <a href="{% url 'index' %}">GE</a>
+            </div>
           </ul>
-        </div>
-      </header>
-    
-      <img src="{% static 'sitee/img/construction.jpg' %}" id=firstimg >
-        <!---   css fileból beolvasva bodyn kívül irja magat, layer problem? -->
-        <ul class="ul-two">  
-          <li>Coffee</li>
-          <li>Coffee</li>
-          <li>Coffee</li>
-        </ul>
-        <div id="testjq">
-          <ul style=" position: absolute;
-                      top: 75%;
-                      width: 700px;
-                      left: 40%;
-                      font-size: 40px;">  
-            <p>randomshit</p>
-            <li>Coffee</li>
-            <li>Coffee</li>
-          </ul>
-        </div>   
-      <img src="{% static 'sitee/img/build.jpeg' %}" id=secimg >
+        </header>
+
     </div>
+</div>
+<section class="container">
+  <div class="left-half">
+    <article>
+      <h1>Left Half</h1>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+    </article>
   </div>
-  <script > 
+  <div class="right-half">
+    <article>
+      <h1>Right Half</h1>
+      <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+    </article>
+  </div>
+</section>
+<script>
   function changetext(){
     $('#testjq li').text('Hi I am replace');
     $('#testjq p').text('Hi I am replace of the p');
   }
 
- 
-  </script>
-          {% block content %}
-          {% endblock %} 
+
+
+</script>
+{% block content %}
+{% endblock %}
 </body>
 </html>
