@@ -148,5 +148,10 @@ ul.ul-two {
 	margin-bottom: 10px;
 	overflow: hidden;
 }
+#image {
+	max-width:200px;
+  	max-height:150px;
 
+
+}
 /*----PART2 BODY END-----*/
