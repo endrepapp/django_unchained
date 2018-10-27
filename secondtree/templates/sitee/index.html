@@ -10,7 +10,7 @@
 </head>
 <!--background="{% static 'sitee/img/construction.jpg' %}" -->
 <body>
-
+ 
 <div class="header">
   <a href="{% url 'index' %}">
     <img src="{% static 'sitee/img/logo.png' %}"
@@ -34,7 +34,7 @@
       <article>
           <div class="filter-box" >
           <p class="title" > gyártó</p>
-          <table cellpadding="2" cellspacing="2" style="display: table;">
+          <table cellpadding="2" cellspacing="2" style="display: table;"> 
             <tbody class="hidden">
               <tr>
                 <td >
@@ -76,10 +76,10 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> 
                 <div class="filter-box" >
           <p class="title" > gyártó</p>
-          <table cellpadding="2" cellspacing="2" style="display: table;">
+          <table cellpadding="2" cellspacing="2" style="display: table;"> 
             <tbody class="hidden">
               <tr>
                 <td >
@@ -121,10 +121,10 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </div> 
         <div class="filter-box" >
           <p class="title"> gyártó</p>
-          <table cellpadding="2" cellspacing="2" style="display: table;">
+          <table cellpadding="2" cellspacing="2" style="display: table;"> 
             <tbody class="hidden">
               <tr>
                 <td >
@@ -166,10 +166,10 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </div>  
         <div class="filter-box" s>
           <p class="title" > gyártó</p>
-          <table cellpadding="2" cellspacing="2" style="display: table;">
+          <table cellpadding="2" cellspacing="2" style="display: table;"> 
             <tbody class="hidden">
               <tr>
                 <td >
@@ -211,10 +211,10 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </div>         
         <div class="filter-box" >
           <p class="title" > gyártó</p>
-          <table cellpadding="2" cellspacing="2" style="display: table;">
+          <table cellpadding="2" cellspacing="2" style="display: table;"> 
             <tbody class="hidden">
               <tr>
                 <td >
@@ -256,7 +256,7 @@
               </tr>
             </tbody>
           </table>
-        </div>
+        </div>      
       </article>
     </div>
     <!-- SECOND SECTION  -->
@@ -265,16 +265,16 @@
       {% for data in all_itemdets %}
 
         <div class="item-box" id="row1" >
-          <img src="static/sitee/img/{{data.image}}" id="image" >
-          <h3><a href="{{data.id}}">{{ data.name}}</h3>
+          <img src="static/sitee/img/{{data.image}}" id="image" >           
+          <h3><a href="{{ data.id}}">{{ data.name}}</h3>  
           <div>
-          {{data.description}}
+          {{ data.description}}
           </div>
-        </div>
+        </div> 
 
       {% endfor %}
 
-
+           
       </article>
     </div>
   </section>

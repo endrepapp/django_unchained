@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from django.template import loader
 from .models import ItemDet
 
-def index(request):
+def index(request): 
 	all_itemdets = ItemDet.objects.all()
 	template = loader.get_template('sitee/index.html')
 	context = {
