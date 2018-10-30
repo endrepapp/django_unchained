@@ -265,11 +265,14 @@
       {% for data in all_itemdets %}
 
         <div class="item-box" id="row1" >
+          <a href="{{ data.id}}">
           <img src="static/sitee/img/{{data.image}}" id="image" >
-          <h3><a href="{{ data.id}}">{{ data.name}} </h3>
+          <h3>{{ data.name}} </h3>
+          {{data.price}} Ft
           <div>
           {{ data.description}}
           </div>
+          </a>
         </div> 
 
       {% endfor %}

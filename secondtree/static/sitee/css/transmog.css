@@ -57,6 +57,16 @@ ul.ul-two {
 	left: 55%;
 	font-size: 30px;
 }
+a{
+    family-font:arial;
+    color: black;
+    font-style: arial;
+}
+a:hover{
+
+    color: black;
+    font-style: arial;
+}
 #pagebone{
 	margin-left: 20px;
 	color: black;
