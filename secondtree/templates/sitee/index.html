@@ -13,17 +13,17 @@
  
 <div class="header">
   <a class = "test" href="{% url 'index' %}">
-    <img id = "logo" src="{% static 'sitee/img/logo.png' %}">
-    <img id = "logo" src="{% static 'sitee/img/logoInv.png' %}">
+    <img class = "logo" src="{% static 'sitee/img/logo.png' %}">
+    <img class = "logo" src="{% static 'sitee/img/logoInv.png' %}" style="position: absolute;  width:100px;height:100px;border:0;left:20%;"><!-- classal nem, müködik 1 el több, de id-val igen? children method beleszól?-->
   <!--  style="position: absolute;  width:100px;height:100px;border:0;left:20%;"> -->
   </a>
   <a id="pagebone" href="{% url 'index' %}">LOGIN</a>
   <a id="pagebtwo" href="{% url 'index' %}">REGISTER</a>
   <ul class=" ul-one">
     <div class="languageb">
-      <a id="lang" href="{% url 'index' %}">HU</a>
-      <a id="lang" href="{% url 'index' %}">EN</a>
-      <a id="lang" href="{% url 'index' %}">GE</a>
+      <a class="lang" href="{% url 'index' %}">HU</a>
+      <a class="lang" href="{% url 'index' %}">EN</a>
+      <a class="lang" href="{% url 'index' %}">GE</a>
     </div>
   </ul>
 </div>
@@ -167,7 +167,7 @@
             </tbody>
           </table>
         </div>  
-        <div class="filter-box" s>
+        <div class="filter-box">
           <p class="title" > gyártó</p>
           <table cellpadding="2" cellspacing="2" style="display: table;"> 
             <tbody class="hidden">
@@ -265,13 +265,11 @@
       {% for data in all_itemdets %}
 
         <div class="item-box" id="row1" >
-          <a href="{{ data.id}}">
           <img src="static/sitee/img/{{data.image}}" id="image" >
           <h3>{{ data.name}} </h3>
           {{data.price}} Ft
-          <div>
-          {{ data.description}}
-          </div>
+          <a href="{{ data.id}}">
+            <br><button id="itemb" type="button">Megnézem</button>
           </a>
         </div> 
 
