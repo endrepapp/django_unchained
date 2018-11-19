@@ -7,12 +7,29 @@ body {
 
 .header {
 	height: 100px;
-	background: #df7209;
+	background: #00000;
 	width: 100%;
 	top: 0;
 	position: fixed;
 	z-index:1;
 	/*  z-index:2; olyan mint a layer, lehetőleg ezt replacelni kéne valami más methodal ami kitolja  */
+}
+.test img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.test:hover img:last-child {
+  opacity: 1;
+}
+#logo{
+    position: absolute;
+    width:100px;
+    height:100px;
+    border:0;
+    left:20%;
 }
 li.header {
 	display: inline-block;
@@ -27,20 +44,13 @@ a.header {
 }
 /*-----BODY START-----*/
 section {
-	color: #fff;
+	color: black;
 	text-align: center;
 }
 div {
 	
 }
-/*article {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  padding: 20px;*/
-}
+
 /*----PART1 BODY END-----*/
 
 
@@ -67,6 +77,16 @@ a:hover{
     color: black;
     font-style: arial;
 }
+#pagebone:hover{
+    border-radius: 15px;
+    background: #d6a23f;
+    transition: .5s ease;
+}
+#pagebtwo:hover{
+    border-radius: 15px;
+    background: #d6a23f;
+    transition: .5s ease;
+}
 #pagebone{
 	margin-left: 20px;
 	color: black;
@@ -75,8 +95,7 @@ a:hover{
 	text-transform: uppercase;
 	position: absolute;
 	top: 25px;
-	left: 7%;
-	
+	right: 25%;
 	font-family: helvetica, arial, sans-serif;
 	font-size: 30px;
 }
@@ -88,14 +107,27 @@ a:hover{
 	text-transform: uppercase;
 	position: absolute;
 	top: 25px;
-	left: 22%;
+	right: 12%;
 	
 	font-family: helvetica, arial, sans-serif;
 	font-size: 30px;
 }
 .languageb{
+	margin-left: 20px;
+	color: black;
+	font-family: helvetica;
+	text-decoration: none;
+	text-transform: uppercase;
+	top: 35px;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 15px;
 	position: absolute;
 	right: 5%;
+}
+#lang:hover{
+    border-radius: 15px;
+    background: #d6a23f;
+    /*padding: 20px;*/
 }
 /*-----PART2 HEADER END-----*/
 
@@ -114,11 +146,11 @@ a:hover{
 	width: 100%;
 	overflow: hidden;
 }
-
+/*  Check box oldal, "Gyártó és stb..." */
 .left-half {
-	background-color: #ff9e2c;
+	background-color: #00000;
 	position: absolute;
-	left: 5px;/*  5px tolva ballról */
+	left: 17%;/*  20% tolva balról */
 	width: 14.5%;
 	top: 100px;
 	overflow: hidden;
@@ -127,17 +159,10 @@ a:hover{
 .right-half {
 	background-color: #b6701e;
 	position: absolute;
-	right: 0px;
-	width: 85%;
+	right: 20%;
+	width: 50%;
 	top: 100px;
 	overflow: hidden;
-}
-.filter-box{
-	border-style: solid;
-	width: 150px;
-	height: 200px;
-	margin-top: 10px;
-	margin-left: 20%;
 }
 .title{
 	border:1px;
@@ -158,9 +183,28 @@ a:hover{
 	margin-bottom: 10px;
 	overflow: hidden;
 }
+.filter-box{
+	border-style: solid;
+    border : 3px solid #fff;
+	width: 150px;
+	height: 200px;
+	margin-top: 10px;
+	margin-left: 20%;
+	border-bottom-style: solid;
+    border-bottom-color: #92a8d1;
+}
+.filter-box:hover{
+    border-radius: 20px;
+    border: 3px solid #d6a23f;
+    transition: .5s ease;
+}
 #image {
 	max-width:200px;
   	max-height:150px;
 }
-
+.hidden:hover{
+	border-style: solid;
+    border : 3px solid #d6a23f;
+    transition: .5s ease;
+}
 /*----PART2 BODY END-----*/
