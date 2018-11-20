@@ -9,30 +9,33 @@
 </head>
 <!--background="{% static 'sitee/img/construction.jpg' %}" -->
 <body>
-
 <div class="header">
-  <a href="{% url 'index' %}">
-    <img src="{% static 'sitee/img/logo.png' %}"
-    style="position: absolute;  width:100px;height:100px;border:0;left:0px;">
+  <a class = "test" href="{% url 'index' %}">
+    <img class = "logo" src="{% static 'sitee/img/logo.png' %}">
+    <img class = "logo" src="{% static 'sitee/img/logoInv.png' %}" style="position: absolute;  width:100px;height:100px;border:0;left:20%;">
   </a>
-  <a id="pagebone" href="{% url 'index' %}">WELLCOME</a>
-  <a id="pagebtwo" href="{% url 'index' %}">SITE1</a>
+  <a id="pagebone" href="{% url 'index' %}">LOGIN</a>
+  <a id="pagebtwo" href="{% url 'index' %}">REGISTER</a>
   <ul class=" ul-one">
     <div class="languageb">
-      <a href="{% url 'index' %}">HU</a>
-      <a href="{% url 'index' %}">EN</a>
-      <a href="{% url 'index' %}">GE</a>
+      <a class="lang" href="{% url 'index' %}">HU</a>
+      <a class="lang" href="{% url 'index' %}">EN</a>
+      <a class="lang" href="{% url 'index' %}">GE</a>
     </div>
   </ul>
 </div>
 
 <!-- item.image =/= selected image, cant found?-->
-<div  style="position: absolute;left: 40%;top: 30%;" >
-  <div style="padding: 15px;border-style: solid;width: 250px;height: 400px;margin-top: 15px;margin-left: 30px;margin-bottom: 10px;overflow: hidden;">
-    <img src="{{item.image}}"  >
+<div  style="position: absolute;left: 40%;top: 30%;text-align: center; " >
+  <div style="padding: 15px;border-style: solid;width: 400px;height: 600px;margin-top: 15px;margin-left: 30px;margin-bottom: 10px;overflow: hidden;">
+   <img src="{{ item.image}}">
     <h3>{{ item.name}} </h3>
     <div>
     {{ item.description}}
     </div>
+    <br>
+    <h3 >{{item.price}} Ft</h3>
   </div>
 </div>
+
+

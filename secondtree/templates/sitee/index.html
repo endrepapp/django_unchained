@@ -10,7 +10,7 @@
 </head>
 <!--background="{% static 'sitee/img/construction.jpg' %}" -->
 <body>
- 
+
 <div class="header">
   <a class = "test" href="{% url 'index' %}">
     <img class = "logo" src="{% static 'sitee/img/logo.png' %}">
@@ -34,7 +34,7 @@
       <article>
           <div class="filter-box" >
           <p class="title" > gyártó</p>
-          <table cellpadding="2" cellspacing="2" style="display: table;"> 
+          <table cellpadding="2" cellspacing="2" style="display: table;">
             <tbody class="hidden">
               <tr>
                 <td >
@@ -76,10 +76,10 @@
               </tr>
             </tbody>
           </table>
-        </div> 
+        </div>
                 <div class="filter-box" >
           <p class="title" > gyártó</p>
-          <table cellpadding="2" cellspacing="2" style="display: table;"> 
+          <table cellpadding="2" cellspacing="2" style="display: table;">
             <tbody class="hidden">
               <tr>
                 <td >
@@ -121,10 +121,10 @@
               </tr>
             </tbody>
           </table>
-        </div> 
+        </div>
         <div class="filter-box" >
           <p class="title"> gyártó</p>
-          <table cellpadding="2" cellspacing="2" style="display: table;"> 
+          <table cellpadding="2" cellspacing="2" style="display: table;">
             <tbody class="hidden">
               <tr>
                 <td >
@@ -166,10 +166,10 @@
               </tr>
             </tbody>
           </table>
-        </div>  
+        </div>
         <div class="filter-box">
           <p class="title" > gyártó</p>
-          <table cellpadding="2" cellspacing="2" style="display: table;"> 
+          <table cellpadding="2" cellspacing="2" style="display: table;">
             <tbody class="hidden">
               <tr>
                 <td >
@@ -211,10 +211,10 @@
               </tr>
             </tbody>
           </table>
-        </div>         
+        </div>
         <div class="filter-box" >
           <p class="title" > gyártó</p>
-          <table cellpadding="2" cellspacing="2" style="display: table;"> 
+          <table cellpadding="2" cellspacing="2" style="display: table;">
             <tbody class="hidden">
               <tr>
                 <td >
@@ -256,7 +256,7 @@
               </tr>
             </tbody>
           </table>
-        </div>      
+        </div>
       </article>
     </div>
     <!-- SECOND SECTION  -->
@@ -269,9 +269,11 @@
           <h3>{{ data.name}} </h3>
           {{data.price}} Ft
           <a href="{{ data.id}}">
-            <br><button id="itemb" type="button">Megnézem</button>
+              <div id="buttonpos">
+                    <br><button id="itemb" type="button" style="">Megnézem</button>
+              </div>
           </a>
-        </div> 
+        </div>
 
       {% endfor %}
 

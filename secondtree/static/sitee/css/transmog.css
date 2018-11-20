@@ -6,7 +6,7 @@ body {
 
 .header {
 	height: 100px;
-	background: #00000;
+	background: #fff;
 	width: 100%;
 	top: 0;
 	position: fixed;
@@ -163,13 +163,18 @@ a:hover{
 	top: 100px;
 	overflow: hidden;
 }
+#buttonpos{
+    position:absolute;
+    bottom:15px;
+    left: 30%;
+}
 #itemb{
+
     background:#fff;
     border-radius: 25px;
     border: 2px solid #d6a23f;
     height:40px;
     width:100px;
-
 }
 #itemb:hover{
     background: #d6a23f;
@@ -188,26 +193,25 @@ a:hover{
 	float: left;
 }
 .item-box{
+    position:relative;
 	padding: 15px;
-	border-style: 2px solid;
 	border: 3px solid #f2f2f2;
 	width: 250px;
 	height: 400px;
 	margin-top: 15px;
-	margin-left: 30px;
-	margin-bottom: 10px;
+	margin-left: 1px;
+	margin-bottom: 1px;
 	overflow: hidden;
 }
 .item-box:hover{
 	padding: 15px;
-	border-style: solid;
 	border : 3px solid #d6a23f;
 	border-radius: 25px;
 	width: 250px;
 	height: 400px;
 	margin-top: 15px;
-	margin-left: 30px;
-	margin-bottom: 10px;
+	margin-left: 1px;
+	margin-bottom: 1px;
 	overflow: hidden;
     transition: .5s ease;
 }
