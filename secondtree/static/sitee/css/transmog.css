@@ -184,9 +184,9 @@ a:hover{
 
 }
 .title{
+    position:relative;
+    right:3%;
 	border:1px;
-	text-align: left;
-	padding-left: 20px; 
 	font-size: 20px;
 }
 #row1{
@@ -230,13 +230,64 @@ a:hover{
     border: 3px solid #d6a23f;
     transition: .5s ease;
 }
+.checkboxcon{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 15px;
+
+}
+.checkboxcon input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.checkmark {
+    position: absolute;
+    top: 10%;
+    left: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+.checkboxcon:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkboxcon input:checked ~ .checkmark {
+    background-color: #d6a23f;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkboxcon input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+.checkboxcon .checkmark:after {
+    left: 7px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 #image {
 	max-width:200px;
   	max-height:150px;
 }
-.hidden:hover{
-	border-style: solid;
-    border : 3px solid #d6a23f;
-    transition: .5s ease;
+.hidden{
+margin-bottom-border:
 }
 /*----PART2 BODY END-----*/
