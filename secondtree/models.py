@@ -15,7 +15,6 @@ class ItemDet(models.Model):
 	price = models.IntegerField()
 	category = models.CharField(max_length=50)
 	name = models.CharField(max_length=100)
-
 	objects = models.Manager()
 
 	def __str__(self):
