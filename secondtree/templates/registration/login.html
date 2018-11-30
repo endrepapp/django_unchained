@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <h3>LOGIN SITE</h3>
+  <form method ="POST" action="{% url 'login' %}">
+      {% csrf_token %}
+      {{form.username.label_tag}}
+      {{form.username}}
+      {{form.password.label_tag}}
+      {{form.password}}
+      <input type="submit" value="Login">
+      {{ from.errors }}
+  </form>
+</head>
+<body>
+
+</body>
+</html>
